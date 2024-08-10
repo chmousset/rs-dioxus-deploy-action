@@ -42,7 +42,7 @@ runs:
       run: cd ${{ inputs.rootPath }} && dx build --${{ inputs.buildMode }} && cp ./${{ inputs.outDirectory }}/index.html ./${{ inputs.outDirectory }}/404.html
 
     - name: Deploy Project 🚀
-      uses: JamesIves/github-pages-deploy-action@v4.4.1
+      uses: JamesIves/github-pages-deploy-action@v4.6.3
       with:
         branch: gh-pages
         folder: ${{ inputs.rootPath }}/${{ inputs.outDirectory }}
